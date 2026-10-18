@@ -1,0 +1,31 @@
+
+:root {
+    /* Identidade visual */
+    --color-background: #0D0D0F;
+    --color-surface: #1C1C20;
+    --color-surface-alt: #2D2F36;
+
+    --color-primary: #D4AF37;
+    --color-text: #E5E7EB;
+    --color-text-muted: #9CA3AF;
+
+    /* Bordas */
+    --color-border: #38383F;
+
+    /* Tipografia */
+    --font-heading: "Orbitron", sans-serif;
+    --font-body: "Inter", sans-serif;
+
+    /* Espaçamento */
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 32px;
+    --spacing-xl: 64px;
+
+    /* Bordas arredondadas */
+    --radius-sm: 6px;
+    --radius-md: 12px;
+
+    /* Animações */
+    --transition-default: 0.3s ease;
+}
