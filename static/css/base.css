@@ -16,6 +16,8 @@ body {
     color: var(--color-text);
     font-family: var(--font-body);
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
 }
 
 h1, h2, h3, h4 {
@@ -35,4 +37,23 @@ a:hover {
 ::selection {
     background: var(--color-primary);
     color: var(--color-background);
+}
+
+.container {
+    width: min(100% - 40px, 1200px);
+    margin-inline: auto;
+}
+
+#main-content {
+    flex: 1;
+}
+
+button {
+    font: inherit;
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 4px;
 }

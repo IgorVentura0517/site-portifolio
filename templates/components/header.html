@@ -1,0 +1,56 @@
+
+<header class="site-header">
+    <nav class="navbar container"
+        aria-label="Navegação principal">
+
+        <a href="{% url 'home' %}"
+        class="navbar__brand"
+        aria-label="Igor Ventura - Página inicial">
+
+            <span class="navbar__logo">IV</span>
+            <span class="navbar__name">
+                IGOR <strong>VENTURA</strong>
+            </span>
+        </a>
+
+        <button class="navbar__toggle"
+                type="button"
+                aria-label="Abrir menu"
+                aria-controls="nav-menu"
+                aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="navbar__links" id="nav-menu">
+            <li>
+                <a href="{% url 'home' %}"
+                class="navbar__link">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="{% url 'home' %}#sobre"
+                class="navbar__link">
+                    Sobre
+                </a>
+            </li>
+
+            <li>
+                <a href="{% url 'home' %}#projetos"
+                class="navbar__link">
+                    Projetos
+                </a>
+            </li>
+
+            <li>
+                <a href="{% url 'home' %}#contato"
+                class="navbar__link navbar__link--highlight">
+                    Contato
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
