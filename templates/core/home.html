@@ -1,43 +1,26 @@
 
 
-{% load static %}
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+{% extends "base.html" %}
 
-    <title>Igor Ventura | Engenharia & Tecnologia</title>
+{% block title %}
+    Igor Ventura | Engenharia & Tecnologia
+{% endblock %}
 
-    <!-- Fontes -->
-    <link rel="preconnect"
-        href="https://fonts.googleapis.com">
+{% block content %}
+<section class="container"
+        style="padding: 120px 0; text-align: center;">
 
-    <link rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin>
+    <p style="color: var(--color-primary);">
+        ENGENHARIA • TECNOLOGIA • DESENVOLVIMENTO
+    </p>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
+    <h1 style="margin: 24px 0;">
+        Construindo soluções através da tecnologia.
+    </h1>
 
-    <!-- CSS -->
-    <link rel="stylesheet"
-        href="{% static 'css/variables.css' %}">
+    <p>
+        Bem-vindo ao meu portfólio profissional.
+    </p>
 
-    <link rel="stylesheet"
-        href="{% static 'css/base.css' %}">
-</head>
-<body>
-    <main style="padding: 80px 24px; text-align: center;">
-        <h1>
-            IGOR
-            <span style="color: var(--color-primary);">
-                VENTURA
-            </span>
-        </h1>
-
-        <p>ENGENHARIA • TECNOLOGIA • DESENVOLVIMENTO</p>
-    </main>
-</body>
-</html>
+</section>
+{% endblock %}
