@@ -1,26 +1,174 @@
 
-
 {% extends "base.html" %}
+{% load static %}
 
 {% block title %}
-    Igor Ventura | Engenharia & Tecnologia
+Igor Ventura | Engenharia & Tecnologia
+{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
 {% endblock %}
 
 {% block content %}
-<section class="container"
-        style="padding: 120px 0; text-align: center;">
 
-    <p style="color: var(--color-primary);">
-        ENGENHARIA • TECNOLOGIA • DESENVOLVIMENTO
-    </p>
 
-    <h1 style="margin: 24px 0;">
-        Construindo soluções através da tecnologia.
-    </h1>
+<section class="hero container" id="inicio">
+    <div class="hero__content">
+        <span class="section-eyebrow">
+            ENGENHARIA DA COMPUTAÇÃO
+        </span>
 
-    <p>
-        Bem-vindo ao meu portfólio profissional.
-    </p>
+        <h1 class="hero__title">
+            Transformando ideias em
+            <span>soluções tecnológicas.</span>
+        </h1>
 
+        <p class="hero__description">
+            Sou Igor Ventura, desenvolvedor em formação,
+            com foco em desenvolvimento de software,
+            inteligência artificial e resolução de
+            problemas reais através da tecnologia.
+        </p>
+
+        <div class="hero__actions">
+            <a href="#projetos" class="btn btn--primary">
+                Explorar projetos
+            </a>
+
+            <a href="https://github.com/IgorVentura0517"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn--outline">
+                GitHub
+            </a>
+        </div>
+    </div>
 </section>
+
+<!-- COMPETÊNCIAS -->
+<section class="skills section" id="competencias">
+    <div class="container">
+        <span class="section-eyebrow">
+            01 / COMPETÊNCIAS
+        </span>
+
+        <h2 class="section-title">
+            Tecnologias & Conhecimentos
+        </h2>
+
+        <div class="skills__grid">
+            <div class="skill-card">Python</div>
+            <div class="skill-card">Django</div>
+            <div class="skill-card">FastAPI</div>
+            <div class="skill-card">SQL</div>
+            <div class="skill-card">Git & GitHub</div>
+            <div class="skill-card">Machine Learning</div>
+        </div>
+    </div>
+</section>
+
+<!-- PROJETOS -->
+<section class="projects section" id="projetos">
+    <div class="container">
+        <span class="section-eyebrow">
+            02 / PORTFÓLIO
+        </span>
+
+        <h2 class="section-title">
+            Projetos em destaque
+        </h2>
+
+        <div class="projects__grid">
+
+            <article class="project-card">
+                <div class="project-card__image">
+                    <span>STUDYFLOW</span>
+                </div>
+
+                <div class="project-card__body">
+                    <span class="project-card__category">
+                        WEB APPLICATION
+                    </span>
+                    <h3>StudyFlow</h3>
+                    <p>
+                        Aplicação web para organização
+                        e gerenciamento de estudos.
+                    </p>
+                    <span class="project-card__stack">
+                        Node.js • Express • MySQL
+                    </span>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-card__image">
+                    <span>METROBOT</span>
+                </div>
+
+                <div class="project-card__body">
+                    <span class="project-card__category">
+                        ALGORITMOS
+                    </span>
+                    <h3>MetroBot</h3>
+                    <p>
+                        Sistema de busca de rotas
+                        utilizando algoritmos de grafos.
+                    </p>
+                    <span class="project-card__stack">
+                        Python • BFS • DFS
+                    </span>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-card__image">
+                    <span>ML</span>
+                </div>
+
+                <div class="project-card__body">
+                    <span class="project-card__category">
+                        MACHINE LEARNING
+                    </span>
+                    <h3>Inadimplência ML</h3>
+                    <p>
+                        Projeto de análise preditiva
+                        para classificação de risco
+                        de inadimplência.
+                    </p>
+                    <span class="project-card__stack">
+                        Python • Scikit-learn
+                    </span>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<!-- CONTATO -->
+<section class="contact section" id="contato">
+    <div class="container contact__content">
+        <span class="section-eyebrow">
+            03 / CONTATO
+        </span>
+
+        <h2 class="section-title">
+            Vamos construir algo juntos?
+        </h2>
+
+        <p>
+            Estou aberto a oportunidades profissionais,
+            colaboração em projetos e novos desafios.
+        </p>
+
+        <a href="https://github.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn btn--primary">
+            Conhecer meu GitHub
+        </a>
+    </div>
+</section>
+
 {% endblock %}
