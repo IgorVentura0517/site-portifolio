@@ -1,0 +1,124 @@
+
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+Sobre Mim | Igor Ventura
+{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet"
+      href="{% static 'css/sobre.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<section class="about-hero section">
+    <div class="container">
+
+        <span class="section-eyebrow">
+            01 / MINHA TRAJETÓRIA
+        </span>
+
+        <h1 class="about-title">
+            Muito além de
+            <span>escrever código.</span>
+        </h1>
+
+        <div class="about-intro">
+            <div class="about-photo">
+                <span>IV</span>
+            </div>
+
+            <div class="about-description">
+                <h2>Igor Ventura</h2>
+
+                <p>
+                    Sou estudante de Engenharia da Computação,
+                    com interesse em desenvolvimento de software,
+                    arquitetura de sistemas e inteligência artificial.
+                </p>
+
+                <p>
+                    Busco transformar conhecimentos técnicos em
+                    soluções práticas, desenvolvendo projetos que
+                    envolvem programação, bancos de dados,
+                    algoritmos e aplicações web.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="experience section">
+    <div class="container">
+
+        <span class="section-eyebrow">
+            02 / EXPERIÊNCIA
+        </span>
+
+        <h2 class="section-title">
+            Minha trajetória
+        </h2>
+
+        <div class="timeline">
+
+            <article class="timeline-item">
+                <h3>Engenharia da Computação</h3>
+                <p>
+                    Formação acadêmica com estudos em programação,
+                    redes de computadores, sistemas embarcados,
+                    bancos de dados e engenharia de software.
+                </p>
+            </article>
+
+            <article class="timeline-item">
+                <h3>Experiência em Banco de Dados</h3>
+                <p>
+                    Experiência de estágio com MySQL e SQLite,
+                    envolvendo consultas SQL e criação de tabelas.
+                </p>
+            </article>
+
+            <article class="timeline-item">
+                <h3>Desenvolvimento de Projetos</h3>
+                <p>
+                    Construção de aplicações práticas como
+                    StudyFlow, MetroBot e projetos de
+                    Machine Learning.
+                </p>
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="about-skills section">
+    <div class="container">
+
+        <span class="section-eyebrow">
+            03 / CONHECIMENTOS
+        </span>
+
+        <h2 class="section-title">
+            Tecnologias utilizadas
+        </h2>
+
+        <div class="about-skills__grid">
+            <span>Python</span>
+            <span>Django</span>
+            <span>FastAPI</span>
+            <span>MySQL</span>
+            <span>SQLite</span>
+            <span>Git & GitHub</span>
+            <span>HTML & CSS</span>
+            <span>JavaScript</span>
+            <span>Machine Learning</span>
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}
