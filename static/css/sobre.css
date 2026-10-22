@@ -1,0 +1,270 @@
+
+.about-title {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin-bottom: 48px;
+}
+
+.about-title span {
+    color: var(--color-primary);
+}
+
+.about-intro {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 48px;
+    align-items: center;
+}
+
+.about-photo {
+    min-height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-surface);
+    border: 1px solid var(--color-primary);
+    border-radius: var(--radius-md);
+}
+
+.about-photo span {
+    color: var(--color-primary);
+    font-family: var(--font-heading);
+    font-size: 4rem;
+}
+
+.about-description h2 {
+    margin-bottom: 20px;
+}
+
+.about-description p {
+    color: var(--color-text-muted);
+    margin-bottom: 16px;
+}
+
+.experience {
+    background: var(--color-surface);
+}
+
+.timeline {
+    max-width: 900px;
+    margin-top: 32px;
+    padding-left: 28px;
+    border-left: 1px solid var(--color-primary);
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 12px;
+    margin-bottom: 32px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -35px;
+    top: 8px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: var(--color-primary);
+}
+
+.timeline-item h3 {
+    font-family: var(--font-body);
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.timeline-item p {
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.about-skills__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+    max-width: 900px;
+}
+
+.about-skills__grid span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 64px;
+    padding: 16px;
+
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-weight: 500;
+
+    transition: var(--transition-default);
+}
+
+.about-skills__grid span:hover {
+    border-color: var(--color-primary);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .about-intro {
+        grid-template-columns: 1fr;
+    }
+
+    .about-photo {
+        min-height: 240px;
+    }
+
+    .about-skills__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .about-skills__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* ==========================
+   ESPAÇAMENTO DAS SEÇÕES
+========================== */
+
+.about-hero {
+    padding: 110px 0;
+}
+
+.experience {
+    padding: 100px 0 120px;
+}
+
+.about-skills {
+    padding: 100px 0 120px;
+}
+
+/* Títulos das seções */
+
+.experience .section-title,
+.about-skills .section-title {
+    margin-bottom: 48px;
+}
+
+/* ==========================
+   TRAJETÓRIA
+========================== */
+
+.timeline {
+    max-width: 900px;
+    margin-top: 40px;
+    padding-left: 28px;
+    border-left: 2px solid var(--color-primary);
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 12px;
+    margin-bottom: 48px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -35px;
+    top: 8px;
+    width: 12px;
+    height: 12px;
+    background: var(--color-primary);
+    border-radius: 50%;
+}
+
+.timeline-item h3 {
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.timeline-item p {
+    max-width: 750px;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: var(--color-text-muted);
+}
+
+/* ==========================
+TECNOLOGIAS
+========================== */
+
+.about-skills__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    max-width: 950px;
+}
+
+.about-skills__grid span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 80px;
+    padding: 20px;
+
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 500;
+
+    transition: var(--transition-default);
+}
+
+.about-skills__grid span:hover {
+    border-color: var(--color-primary);
+    transform: translateY(-3px);
+}
+
+/* ==========================
+RESPONSIVIDADE
+========================== */
+
+@media (max-width: 768px) {
+    .about-hero,
+    .experience,
+    .about-skills {
+        padding: 70px 0;
+    }
+
+    .timeline-item {
+        margin-bottom: 36px;
+    }
+
+    .about-skills__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-skills__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
